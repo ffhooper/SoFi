@@ -12,7 +12,7 @@ struct Member: Codable {
     let avatar: String? // URL to picture
     let bio: String?
     let firstName: String?
-    let id: Int?
+    let id: String?
     let lastName: String?
     let title: String?
 }

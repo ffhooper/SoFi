@@ -11,7 +11,6 @@
 		29030EEAC967210DA9EB913C /* Pods_SoFiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF42FBC506045537FF33A66 /* Pods_SoFiUITests.framework */; };
 		C936447F207878560085EDB8 /* team.json in Resources */ = {isa = PBXBuildFile; fileRef = C936447E207878560085EDB8 /* team.json */; };
 		C936448220787A450085EDB8 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936448120787A450085EDB8 /* Member.swift */; };
-		C936448420787BDF0085EDB8 /* TeamMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936448320787BDF0085EDB8 /* TeamMembers.swift */; };
 		C9FE03222070624F00749AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE03212070624F00749AB1 /* AppDelegate.swift */; };
 		C9FE03242070624F00749AB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE03232070624F00749AB1 /* ViewController.swift */; };
 		C9FE03272070624F00749AB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FE03252070624F00749AB1 /* Main.storyboard */; };
@@ -51,7 +50,6 @@
 		A839EA6DC6E688A008FD4877 /* Pods_SoFiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoFiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C936447E207878560085EDB8 /* team.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team.json; sourceTree = "<group>"; };
 		C936448120787A450085EDB8 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
-		C936448320787BDF0085EDB8 /* TeamMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMembers.swift; sourceTree = "<group>"; };
 		C9FE031E2070624F00749AB1 /* SoFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FE03212070624F00749AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9FE03232070624F00749AB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				C936448120787A450085EDB8 /* Member.swift */,
-				C936448320787BDF0085EDB8 /* TeamMembers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -472,7 +469,6 @@
 			files = (
 				C9FE03242070624F00749AB1 /* ViewController.swift in Sources */,
 				C936448220787A450085EDB8 /* Member.swift in Sources */,
-				C936448420787BDF0085EDB8 /* TeamMembers.swift in Sources */,
 				C9FE03222070624F00749AB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
