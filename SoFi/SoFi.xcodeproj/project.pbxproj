@@ -133,16 +133,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		C93546EA2086F0B9004045F7 /* SupportFiles */ = {
-			isa = PBXGroup;
-			children = (
-				C9FE032D2070625100749AB1 /* Info.plist */,
-				C9FE03212070624F00749AB1 /* AppDelegate.swift */,
-				C9FE03282070625100749AB1 /* Assets.xcassets */,
-			);
-			path = SupportFiles;
-			sourceTree = "<group>";
-		};
 		C936448020787A120085EDB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,7 +167,9 @@
 		C9FE03202070624F00749AB1 /* SoFi */ = {
 			isa = PBXGroup;
 			children = (
-				C93546EA2086F0B9004045F7 /* SupportFiles */,
+				C9FE032D2070625100749AB1 /* Info.plist */,
+				C9FE03212070624F00749AB1 /* AppDelegate.swift */,
+				C9FE03282070625100749AB1 /* Assets.xcassets */,
 				C936448020787A120085EDB8 /* Model */,
 				C93546E82086F077004045F7 /* View */,
 				C93546E92086F085004045F7 /* Controller */,

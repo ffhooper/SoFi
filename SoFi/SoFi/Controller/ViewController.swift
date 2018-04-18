@@ -12,12 +12,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var profileInfoLabel: UILabel!
     
+    var imageURLS = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let members = loadJson4Test()
+        print(members)
         profileInfoLabel.text = members?.first?.bio
-        
-        print(loadJson4Test())
+        if let members = members {
+            for member in members {
+                if let url = member.avatar {
+                    imageURLS.append(url)
+                }
+            }
+        }
     }
     
     func loadJson4Test() -> [Member]? {
