@@ -116,10 +116,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C93546E82086F077004045F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE032A2070625100749AB1 /* LaunchScreen.storyboard */,
+				C9FE03252070624F00749AB1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C93546E92086F085004045F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE03232070624F00749AB1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C93546EA2086F0B9004045F7 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE032D2070625100749AB1 /* Info.plist */,
+				C9FE03212070624F00749AB1 /* AppDelegate.swift */,
+				C9FE03282070625100749AB1 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
 		C936448020787A120085EDB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				C936448120787A450085EDB8 /* Member.swift */,
+				C936447E207878560085EDB8 /* team.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,14 +177,10 @@
 		C9FE03202070624F00749AB1 /* SoFi */ = {
 			isa = PBXGroup;
 			children = (
+				C93546EA2086F0B9004045F7 /* SupportFiles */,
 				C936448020787A120085EDB8 /* Model */,
-				C9FE03212070624F00749AB1 /* AppDelegate.swift */,
-				C9FE03232070624F00749AB1 /* ViewController.swift */,
-				C9FE03252070624F00749AB1 /* Main.storyboard */,
-				C9FE03282070625100749AB1 /* Assets.xcassets */,
-				C9FE032A2070625100749AB1 /* LaunchScreen.storyboard */,
-				C9FE032D2070625100749AB1 /* Info.plist */,
-				C936447E207878560085EDB8 /* team.json */,
+				C93546E82086F077004045F7 /* View */,
+				C93546E92086F085004045F7 /* Controller */,
 			);
 			path = SoFi;
 			sourceTree = "<group>";
