@@ -5,7 +5,7 @@ target 'SoFi' do
   use_frameworks!
 
   # Pods for SoFi
-  pod 'AlamofireImage'#, '~> 3.3'
+  pod 'AlamofireImage', '3.3.0'
 
   target 'SoFiTests' do
     inherit! :search_paths
