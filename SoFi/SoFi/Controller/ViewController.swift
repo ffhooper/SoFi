@@ -84,10 +84,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func saveScreenshot(_ sender: UIBarButtonItem) {
-        mainImage.image = takeScreenshot()
         if let image = takeScreenshot() {
             if MFMailComposeViewController.canSendMail() {
             let mailComposeVC = MFMailComposeViewController()
+                 mailComposeVC.mailComposeDelegate = self
             mailComposeVC.addAttachmentData(UIImageJPEGRepresentation(image, CGFloat(1.0))!, mimeType: "image/jpeg", fileName:  "test.jpeg")
             mailComposeVC.setSubject("Screenshot from Riley's coding challenge")
                 mailComposeVC.setToRecipients(["cpratt@sofi.org", "tlawson@sofi.org"])
@@ -137,18 +137,30 @@ class ViewController: UIViewController {
         return screenshotImage
     }
     
-    
+    func presentAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alertController, animated:true, completion:nil)
+    }
 }
 
 extension ViewController: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        if result == MFMailComposeResult.sent {
-            self.dismiss(animated: false, completion: {
-                let alertController = UIAlertController(title: "", message: "Mail Sent!", preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                
-                self.present(alertController, animated:true, completion:nil)
+        switch result {
+        case .sent:
+            self.dismiss(animated: true, completion: {
+                self.presentAlert(title: "Email sent", message: "")
             })
+        case .failed:
+            self.dismiss(animated: true, completion: {
+                if let error = error?.localizedDescription {
+                self.presentAlert(title: "Email Failed", message: error)
+                } else {
+                    self.presentAlert(title: "Email failed to send", message: "")
+                }
+                })
+        default:
+            self.dismiss(animated: true, completion: nil)
         }
         
     }
