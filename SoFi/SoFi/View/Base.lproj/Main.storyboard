@@ -56,9 +56,6 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="mtM-gu-XZ8" appends="YES" id="ipd-md-Awy"/>
-                                </connections>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-8N-nbe">
                                 <rect key="frame" x="251.5" y="56" width="107.5" height="225.5"/>
@@ -80,24 +77,24 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-XL-Qca">
-                                                <rect key="frame" x="77" y="77" width="30" height="30"/>
+                                                <rect key="frame" x="79.5" y="79.5" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="PAZ-iG-srk"/>
                                                     <constraint firstAttribute="width" constant="30" id="s7w-cQ-9Xa"/>
                                                 </constraints>
                                                 <state key="normal" title="Delete" image="redX"/>
                                                 <connections>
-                                                    <action selector="removeMainImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLT-J3-eeJ"/>
+                                                    <action selector="removeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lgr-RS-WMo"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="1sb-Az-xCf" firstAttribute="top" secondItem="Gao-br-Qvm" secondAttribute="top" id="3hY-sk-7Df"/>
-                                            <constraint firstAttribute="bottom" secondItem="Roh-XL-Qca" secondAttribute="bottom" id="8Qg-C3-Qg5"/>
+                                            <constraint firstAttribute="bottom" secondItem="Roh-XL-Qca" secondAttribute="bottom" constant="-2" id="8Qg-C3-Qg5"/>
                                             <constraint firstAttribute="bottom" secondItem="1sb-Az-xCf" secondAttribute="bottom" id="95t-Mz-YDr"/>
                                             <constraint firstItem="1sb-Az-xCf" firstAttribute="leading" secondItem="Gao-br-Qvm" secondAttribute="leading" id="BdU-JT-bcv"/>
-                                            <constraint firstAttribute="trailing" secondItem="Roh-XL-Qca" secondAttribute="trailing" id="V1b-Mv-rdV"/>
+                                            <constraint firstAttribute="trailing" secondItem="Roh-XL-Qca" secondAttribute="trailing" constant="-2" id="V1b-Mv-rdV"/>
                                             <constraint firstAttribute="trailing" secondItem="1sb-Az-xCf" secondAttribute="trailing" id="i3z-zQ-Jl9"/>
                                         </constraints>
                                     </view>
@@ -118,24 +115,24 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaO-pL-ypM">
-                                                <rect key="frame" x="77.5" y="78" width="30" height="30"/>
+                                                <rect key="frame" x="79.5" y="80" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="MY3-pH-rJ2"/>
                                                     <constraint firstAttribute="height" constant="30" id="W9a-bc-aGW"/>
                                                 </constraints>
                                                 <state key="normal" title="Delete" image="redX"/>
                                                 <connections>
-                                                    <action selector="removeMainImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DZQ-y1-byy"/>
+                                                    <action selector="removeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HaF-ak-HYj"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="OaO-pL-ypM" secondAttribute="bottom" id="Hgd-Kj-JbP"/>
+                                            <constraint firstAttribute="bottom" secondItem="OaO-pL-ypM" secondAttribute="bottom" constant="-2" id="Hgd-Kj-JbP"/>
                                             <constraint firstAttribute="bottom" secondItem="5UD-Xw-QIa" secondAttribute="bottom" id="IvG-x8-pPb"/>
                                             <constraint firstItem="5UD-Xw-QIa" firstAttribute="top" secondItem="MEY-Vk-Nwb" secondAttribute="top" id="i33-Dd-rDP"/>
                                             <constraint firstAttribute="trailing" secondItem="5UD-Xw-QIa" secondAttribute="trailing" id="iXt-mU-m0s"/>
-                                            <constraint firstAttribute="trailing" secondItem="OaO-pL-ypM" secondAttribute="trailing" id="ssQ-6D-9Kw"/>
+                                            <constraint firstAttribute="trailing" secondItem="OaO-pL-ypM" secondAttribute="trailing" constant="-2" id="ssQ-6D-9Kw"/>
                                             <constraint firstItem="5UD-Xw-QIa" firstAttribute="leading" secondItem="MEY-Vk-Nwb" secondAttribute="leading" id="v7v-S5-6iu"/>
                                         </constraints>
                                     </view>
@@ -161,21 +158,21 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzj-FW-ef5">
-                                                <rect key="frame" x="77.5" y="77.5" width="30" height="30"/>
+                                                <rect key="frame" x="79.5" y="79.5" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="041-4f-5lk"/>
                                                     <constraint firstAttribute="width" constant="30" id="otx-H2-qQi"/>
                                                 </constraints>
                                                 <state key="normal" title="Delete" image="redX"/>
                                                 <connections>
-                                                    <action selector="removeMainImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d51-Ws-UEh"/>
+                                                    <action selector="removeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tF2-EX-bwF"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="lzj-FW-ef5" secondAttribute="trailing" id="3gD-uk-PPG"/>
-                                            <constraint firstAttribute="bottom" secondItem="lzj-FW-ef5" secondAttribute="bottom" id="ELO-Nd-Q3l"/>
+                                            <constraint firstAttribute="trailing" secondItem="lzj-FW-ef5" secondAttribute="trailing" constant="-2" id="3gD-uk-PPG"/>
+                                            <constraint firstAttribute="bottom" secondItem="lzj-FW-ef5" secondAttribute="bottom" constant="-2" id="ELO-Nd-Q3l"/>
                                             <constraint firstAttribute="bottom" secondItem="AAj-Ew-bDy" secondAttribute="bottom" id="EZl-vM-GLJ"/>
                                             <constraint firstItem="AAj-Ew-bDy" firstAttribute="leading" secondItem="sIg-6P-0oD" secondAttribute="leading" id="HKA-aA-fdf"/>
                                             <constraint firstAttribute="trailing" secondItem="AAj-Ew-bDy" secondAttribute="trailing" id="HWF-IO-hCL"/>
@@ -199,14 +196,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M21-mk-Hkw">
-                                                <rect key="frame" x="77.5" y="77.5" width="30" height="30"/>
+                                                <rect key="frame" x="79.5" y="79.5" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Iuh-xc-fWa"/>
                                                     <constraint firstAttribute="width" constant="30" id="QPp-8p-PvR"/>
                                                 </constraints>
                                                 <state key="normal" title="Delete" image="redX"/>
                                                 <connections>
-                                                    <action selector="removeMainImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q5B-lt-qwH"/>
+                                                    <action selector="removeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufa-wV-hsW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -214,9 +211,9 @@
                                         <constraints>
                                             <constraint firstItem="oO2-XL-mNj" firstAttribute="leading" secondItem="ICH-t0-Yqr" secondAttribute="leading" id="3tB-Oi-8tt"/>
                                             <constraint firstAttribute="bottom" secondItem="oO2-XL-mNj" secondAttribute="bottom" id="cQL-P0-tPR"/>
-                                            <constraint firstAttribute="bottom" secondItem="M21-mk-Hkw" secondAttribute="bottom" id="d0K-9R-vka"/>
+                                            <constraint firstAttribute="bottom" secondItem="M21-mk-Hkw" secondAttribute="bottom" constant="-2" id="d0K-9R-vka"/>
                                             <constraint firstAttribute="trailing" secondItem="oO2-XL-mNj" secondAttribute="trailing" id="ifi-wx-PYT"/>
-                                            <constraint firstAttribute="trailing" secondItem="M21-mk-Hkw" secondAttribute="trailing" id="is9-wh-6TP"/>
+                                            <constraint firstAttribute="trailing" secondItem="M21-mk-Hkw" secondAttribute="trailing" constant="-2" id="is9-wh-6TP"/>
                                             <constraint firstItem="oO2-XL-mNj" firstAttribute="top" secondItem="ICH-t0-Yqr" secondAttribute="top" id="nu9-1l-Cpa"/>
                                         </constraints>
                                     </view>
@@ -237,23 +234,23 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r81-7x-jvq">
-                                                <rect key="frame" x="78" y="77" width="30" height="30"/>
+                                                <rect key="frame" x="80" y="79.5" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="827-1a-tLu"/>
                                                     <constraint firstAttribute="height" constant="30" id="8Uk-dr-pCB"/>
                                                 </constraints>
                                                 <state key="normal" title="Delete" image="redX"/>
                                                 <connections>
-                                                    <action selector="removeMainImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I2y-Tv-aEd"/>
+                                                    <action selector="removeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M51-uL-Rnu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="r81-7x-jvq" secondAttribute="bottom" id="3n2-ah-Cep"/>
+                                            <constraint firstAttribute="bottom" secondItem="r81-7x-jvq" secondAttribute="bottom" constant="-2" id="3n2-ah-Cep"/>
                                             <constraint firstItem="SeA-Pg-jGt" firstAttribute="leading" secondItem="ocg-f1-KtA" secondAttribute="leading" id="8HE-E1-CmJ"/>
                                             <constraint firstAttribute="trailing" secondItem="SeA-Pg-jGt" secondAttribute="trailing" id="P89-gK-u01"/>
-                                            <constraint firstAttribute="trailing" secondItem="r81-7x-jvq" secondAttribute="trailing" id="h8f-Wx-bVw"/>
+                                            <constraint firstAttribute="trailing" secondItem="r81-7x-jvq" secondAttribute="trailing" constant="-2" id="h8f-Wx-bVw"/>
                                             <constraint firstItem="SeA-Pg-jGt" firstAttribute="top" secondItem="ocg-f1-KtA" secondAttribute="top" id="ndd-Wo-LrO"/>
                                             <constraint firstAttribute="bottom" secondItem="SeA-Pg-jGt" secondAttribute="bottom" id="wab-aC-6CX"/>
                                         </constraints>
@@ -294,14 +291,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sda-GS-CDl">
-                                <rect key="frame" x="211" y="251" width="30" height="30"/>
+                                <rect key="frame" x="213" y="253" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="moP-RV-qsv"/>
                                     <constraint firstAttribute="height" constant="30" id="xEg-ds-lgm"/>
                                 </constraints>
                                 <state key="normal" title="Delete" image="redX"/>
                                 <connections>
-                                    <action selector="removeMainImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJY-3n-cfZ"/>
+                                    <action selector="removeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmB-j9-adA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -309,7 +306,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cyz-8N-nbe" secondAttribute="trailing" constant="16" id="2Y7-3l-IV4"/>
                             <constraint firstItem="cyz-8N-nbe" firstAttribute="height" secondItem="9Vy-Bm-PK2" secondAttribute="height" id="2wn-Je-p7L"/>
-                            <constraint firstItem="cyz-8N-nbe" firstAttribute="leading" secondItem="sda-GS-CDl" secondAttribute="trailing" constant="10.5" id="4jK-RS-WRB"/>
+                            <constraint firstItem="cyz-8N-nbe" firstAttribute="leading" secondItem="sda-GS-CDl" secondAttribute="trailing" constant="8" id="4jK-RS-WRB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7WI-S8-HTa" secondAttribute="trailing" constant="16" id="5K5-r4-PMS"/>
                             <constraint firstItem="ryd-ZZ-z7K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5jZ-CF-lmJ"/>
                             <constraint firstItem="cyz-8N-nbe" firstAttribute="leading" secondItem="9Vy-Bm-PK2" secondAttribute="trailing" constant="10" id="9ZX-yS-qte"/>
@@ -329,7 +326,7 @@
                             <constraint firstItem="5jG-7k-sKe" firstAttribute="top" secondItem="BvF-Jp-RfN" secondAttribute="bottom" constant="8" id="XNz-ad-7Mf"/>
                             <constraint firstItem="BvF-Jp-RfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Xq5-Kt-1OF"/>
                             <constraint firstItem="7WI-S8-HTa" firstAttribute="top" secondItem="9Vy-Bm-PK2" secondAttribute="bottom" constant="10" id="dk1-gb-Evt"/>
-                            <constraint firstItem="7WI-S8-HTa" firstAttribute="top" secondItem="sda-GS-CDl" secondAttribute="bottom" constant="10.5" id="pVL-dJ-tnX"/>
+                            <constraint firstItem="7WI-S8-HTa" firstAttribute="top" secondItem="sda-GS-CDl" secondAttribute="bottom" constant="8" id="pVL-dJ-tnX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -337,7 +334,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Back" id="Jqd-f5-cGr">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="freashImages:" destination="BYZ-38-t0r" id="H5b-pR-B8O"/>
+                                <action selector="fetchImages:" destination="BYZ-38-t0r" id="OPB-yb-q5h"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="mDM-hg-Tcs">
@@ -358,11 +355,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="mtM-gu-XZ8">
-                    <connections>
-                        <action selector="image1:" destination="BYZ-38-t0r" id="tBN-ib-9XS"/>
-                    </connections>
-                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1944.8" y="792.95352323838085"/>
         </scene>

@@ -26,9 +26,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myController = MFMailComposeViewController()
-        myController.mailComposeDelegate = self
-        
         let members = loadJson()
         profileInfoLabel.text = members?.first?.bio
         if let members = members {
@@ -38,10 +35,12 @@ class ViewController: UIViewController {
                 }
             }
         }
-        print(imageURLS.count)
         loadImagesIntoView()
     }
     
+    /// Parse data from team.json file.
+    ///
+    /// - Returns: Array of member object.
     func loadJson() -> [Member]? {
         if let url = Bundle.main.url(forResource: "team", withExtension: "json") {
             do {
@@ -50,26 +49,29 @@ class ViewController: UIViewController {
                 let jsonData = try decoder.decode([Member].self, from: data)
                 return jsonData
             } catch {
-                print("error:\(error)")
+                presentAlert(title: "Error", message: "\(error)")
             }
         }
         return nil
     }
     
+    /// Download single image of the web.
+    ///
+    /// - Parameters:
+    ///   - url: Location of image.
+    ///   - imageView: Which uiimageView to load it into.
     func dowmloadImages(url: String, imageView: UIImageView) {
-            Alamofire.request(url).responseImage { response in
-                debugPrint(response)
-                
-                print(response.request as Any)
-                print(response.response as Any)
-                debugPrint(response.result)
-                
-                if let image = response.result.value {
-                    imageView.image = image
-                }
+        Alamofire.request(url).responseImage { response in
+            if let error = response.error?.localizedDescription {
+                self.presentAlert(title: "Load Failed", message: error)
+            }
+            if let image = response.result.value {
+                imageView.image = image
+            }
         }
     }
     
+    /// Fetch all images from internet.
     func loadImagesIntoView() {
         dowmloadImages(url: imageURLS[10], imageView: mainImage)
         dowmloadImages(url: imageURLS[2], imageView: image1)
@@ -79,34 +81,32 @@ class ViewController: UIViewController {
         dowmloadImages(url: imageURLS[9], imageView: image5)
     }
     
-    @IBAction func freashImages(_ sender: UIBarButtonItem) {
+    /// Reload images in view.
+    @IBAction func fetchImages(_ sender: UIBarButtonItem) {
         loadImagesIntoView()
     }
     
+    /// Send screenshot in compose email to send to developers.
     @IBAction func saveScreenshot(_ sender: UIBarButtonItem) {
         if let image = takeScreenshot() {
             if MFMailComposeViewController.canSendMail() {
-            let mailComposeVC = MFMailComposeViewController()
-                 mailComposeVC.mailComposeDelegate = self
-            mailComposeVC.addAttachmentData(UIImageJPEGRepresentation(image, CGFloat(1.0))!, mimeType: "image/jpeg", fileName:  "test.jpeg")
-            mailComposeVC.setSubject("Screenshot from Riley's coding challenge")
+                let mailComposeVC = MFMailComposeViewController()
+                mailComposeVC.mailComposeDelegate = self
+                mailComposeVC.addAttachmentData(UIImageJPEGRepresentation(image, CGFloat(1.0))!, mimeType: "image/jpeg", fileName:  "test.jpeg")
+                mailComposeVC.setSubject("Screenshot from Riley's coding challenge")
                 mailComposeVC.setToRecipients(["cpratt@sofi.org", "tlawson@sofi.org"])
                 mailComposeVC.setMessageBody("Screenshot sent from Riley Hooper's coding challenge.", isHTML: false)
-            self.present(mailComposeVC, animated: true, completion: nil)
+                self.present(mailComposeVC, animated: true, completion: nil)
+            } else {
+                presentAlert(title: "Email not available", message: "Please make sure you are signed into an email account in order to send the message.")
             }
         } else {
-            print("Screenshot failed.")
+            presentAlert(title: "Screenshot failed.", message: "")
         }
     }
     
-    
-
-    
-    @IBAction func image1(_ sender: UILongPressGestureRecognizer) {
-        print("image1")
-    }
-    
-    @IBAction func removeMainImage(_ sender: UIButton) {
+    /// Remove image from imageView.
+    @IBAction func removeImage(_ sender: UIButton) {
         switch sender.tag {
         case 1:
             mainImage.image = nil
@@ -125,6 +125,9 @@ class ViewController: UIViewController {
         }
     }
     
+    /// Take screenshot of app.
+    ///
+    /// - Returns: The saved screenshot.
     func takeScreenshot() -> UIImage? {
         var screenshotImage :UIImage?
         let layer = UIApplication.shared.keyWindow!.layer
@@ -137,10 +140,20 @@ class ViewController: UIViewController {
         return screenshotImage
     }
     
+    /// Create and present alert to user.
+    ///
+    /// - Parameters:
+    ///   - title: Title of the alert.
+    ///   - message: Body of the alert.
     func presentAlert(title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alertController, animated:true, completion:nil)
+    }
+    
+    /// Hide status bar.
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 }
 
@@ -154,11 +167,11 @@ extension ViewController: MFMailComposeViewControllerDelegate {
         case .failed:
             self.dismiss(animated: true, completion: {
                 if let error = error?.localizedDescription {
-                self.presentAlert(title: "Email Failed", message: error)
+                    self.presentAlert(title: "Email Failed", message: error)
                 } else {
                     self.presentAlert(title: "Email failed to send", message: "")
                 }
-                })
+            })
         default:
             self.dismiss(animated: true, completion: nil)
         }
