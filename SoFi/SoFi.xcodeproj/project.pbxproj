@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CEFD73D7A939CFF7A930B74 /* Pods_SoFiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A839EA6DC6E688A008FD4877 /* Pods_SoFiTests.framework */; };
+		29030EEAC967210DA9EB913C /* Pods_SoFiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF42FBC506045537FF33A66 /* Pods_SoFiUITests.framework */; };
+		C936447F207878560085EDB8 /* team.json in Resources */ = {isa = PBXBuildFile; fileRef = C936447E207878560085EDB8 /* team.json */; };
+		C936448220787A450085EDB8 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936448120787A450085EDB8 /* Member.swift */; };
 		C9FE03222070624F00749AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE03212070624F00749AB1 /* AppDelegate.swift */; };
 		C9FE03242070624F00749AB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE03232070624F00749AB1 /* ViewController.swift */; };
 		C9FE03272070624F00749AB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FE03252070624F00749AB1 /* Main.storyboard */; };
@@ -14,6 +18,7 @@
 		C9FE032C2070625100749AB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FE032A2070625100749AB1 /* LaunchScreen.storyboard */; };
 		C9FE03372070625100749AB1 /* SoFiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE03362070625100749AB1 /* SoFiTests.swift */; };
 		C9FE03422070625100749AB1 /* SoFiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE03412070625100749AB1 /* SoFiUITests.swift */; };
+		E5E8B43A63CAEB6BD56FC7AD /* Pods_SoFi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DC6BAFF108F5B5906E7DC8 /* Pods_SoFi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20E116537D743DFFE4446531 /* Pods-SoFi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoFi.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoFi/Pods-SoFi.release.xcconfig"; sourceTree = "<group>"; };
+		28DD30EAF8DDACDE3B104FF5 /* Pods-SoFiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoFiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoFiTests/Pods-SoFiTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D53263E3F91D1EDA6F17131 /* Pods-SoFi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoFi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoFi/Pods-SoFi.debug.xcconfig"; sourceTree = "<group>"; };
+		5E29DD58A9D2554A1CA11F16 /* Pods-SoFiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoFiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoFiTests/Pods-SoFiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81DC6BAFF108F5B5906E7DC8 /* Pods_SoFi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoFi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF42FBC506045537FF33A66 /* Pods_SoFiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoFiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD5139EBE5CF4FE85A614E9 /* Pods-SoFiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoFiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoFiUITests/Pods-SoFiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CAAC50E7A33C1E5A3A69239 /* Pods-SoFiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoFiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoFiUITests/Pods-SoFiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A839EA6DC6E688A008FD4877 /* Pods_SoFiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoFiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C936447E207878560085EDB8 /* team.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team.json; sourceTree = "<group>"; };
+		C936448120787A450085EDB8 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		C9FE031E2070624F00749AB1 /* SoFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FE03212070624F00749AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9FE03232070624F00749AB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E8B43A63CAEB6BD56FC7AD /* Pods_SoFi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CEFD73D7A939CFF7A930B74 /* Pods_SoFiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29030EEAC967210DA9EB913C /* Pods_SoFiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CC245717C86C1E162BC33AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81DC6BAFF108F5B5906E7DC8 /* Pods_SoFi.framework */,
+				A839EA6DC6E688A008FD4877 /* Pods_SoFiTests.framework */,
+				8AF42FBC506045537FF33A66 /* Pods_SoFiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4A134D8517B57D7F3292332 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D53263E3F91D1EDA6F17131 /* Pods-SoFi.debug.xcconfig */,
+				20E116537D743DFFE4446531 /* Pods-SoFi.release.xcconfig */,
+				5E29DD58A9D2554A1CA11F16 /* Pods-SoFiTests.debug.xcconfig */,
+				28DD30EAF8DDACDE3B104FF5 /* Pods-SoFiTests.release.xcconfig */,
+				8DD5139EBE5CF4FE85A614E9 /* Pods-SoFiUITests.debug.xcconfig */,
+				9CAAC50E7A33C1E5A3A69239 /* Pods-SoFiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C93546E82086F077004045F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE032A2070625100749AB1 /* LaunchScreen.storyboard */,
+				C9FE03252070624F00749AB1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C93546E92086F085004045F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE03232070624F00749AB1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C936448020787A120085EDB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C936448120787A450085EDB8 /* Member.swift */,
+				C936447E207878560085EDB8 /* team.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C9FE03152070624F00749AB1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +149,8 @@
 				C9FE03352070625100749AB1 /* SoFiTests */,
 				C9FE03402070625100749AB1 /* SoFiUITests */,
 				C9FE031F2070624F00749AB1 /* Products */,
+				C4A134D8517B57D7F3292332 /* Pods */,
+				8CC245717C86C1E162BC33AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +167,12 @@
 		C9FE03202070624F00749AB1 /* SoFi */ = {
 			isa = PBXGroup;
 			children = (
-				C9FE03212070624F00749AB1 /* AppDelegate.swift */,
-				C9FE03232070624F00749AB1 /* ViewController.swift */,
-				C9FE03252070624F00749AB1 /* Main.storyboard */,
-				C9FE03282070625100749AB1 /* Assets.xcassets */,
-				C9FE032A2070625100749AB1 /* LaunchScreen.storyboard */,
 				C9FE032D2070625100749AB1 /* Info.plist */,
+				C9FE03212070624F00749AB1 /* AppDelegate.swift */,
+				C9FE03282070625100749AB1 /* Assets.xcassets */,
+				C936448020787A120085EDB8 /* Model */,
+				C93546E82086F077004045F7 /* View */,
+				C93546E92086F085004045F7 /* Controller */,
 			);
 			path = SoFi;
 			sourceTree = "<group>";
@@ -132,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9FE03462070625100749AB1 /* Build configuration list for PBXNativeTarget "SoFi" */;
 			buildPhases = (
+				49D538B3DE6CD79AC4B0155B /* [CP] Check Pods Manifest.lock */,
 				C9FE031A2070624F00749AB1 /* Sources */,
 				C9FE031B2070624F00749AB1 /* Frameworks */,
 				C9FE031C2070624F00749AB1 /* Resources */,
+				46CFB4BBE263E5D3011AC6C9 /* [CP] Embed Pods Frameworks */,
+				096F774B038245F5E83E4C42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9FE03492070625100749AB1 /* Build configuration list for PBXNativeTarget "SoFiTests" */;
 			buildPhases = (
+				4BE06DAD8B607ADFDEE4E367 /* [CP] Check Pods Manifest.lock */,
 				C9FE032E2070625100749AB1 /* Sources */,
 				C9FE032F2070625100749AB1 /* Frameworks */,
 				C9FE03302070625100749AB1 /* Resources */,
+				D5E794B7A5FFA7C4521FC690 /* [CP] Embed Pods Frameworks */,
+				125C04FF05D51FA35CE78889 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9FE034C2070625100749AB1 /* Build configuration list for PBXNativeTarget "SoFiUITests" */;
 			buildPhases = (
+				C20F31D5B6452C5D33195B85 /* [CP] Check Pods Manifest.lock */,
 				C9FE03392070625100749AB1 /* Sources */,
 				C9FE033A2070625100749AB1 /* Frameworks */,
 				C9FE033B2070625100749AB1 /* Resources */,
+				FEE6320B032CF4FC768022E2 /* [CP] Embed Pods Frameworks */,
+				1B390F8413F0214774FA8A41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C936447F207878560085EDB8 /* team.json in Resources */,
 				C9FE032C2070625100749AB1 /* LaunchScreen.storyboard in Resources */,
 				C9FE03292070625100749AB1 /* Assets.xcassets in Resources */,
 				C9FE03272070624F00749AB1 /* Main.storyboard in Resources */,
@@ -251,12 +331,165 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		096F774B038245F5E83E4C42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoFi/Pods-SoFi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		125C04FF05D51FA35CE78889 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoFiTests/Pods-SoFiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B390F8413F0214774FA8A41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoFiUITests/Pods-SoFiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46CFB4BBE263E5D3011AC6C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SoFi/Pods-SoFi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoFi/Pods-SoFi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49D538B3DE6CD79AC4B0155B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoFi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BE06DAD8B607ADFDEE4E367 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoFiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20F31D5B6452C5D33195B85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoFiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5E794B7A5FFA7C4521FC690 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoFiTests/Pods-SoFiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEE6320B032CF4FC768022E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoFiUITests/Pods-SoFiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9FE031A2070624F00749AB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C9FE03242070624F00749AB1 /* ViewController.swift in Sources */,
+				C936448220787A450085EDB8 /* Member.swift in Sources */,
 				C9FE03222070624F00749AB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +661,7 @@
 		};
 		C9FE03472070625100749AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D53263E3F91D1EDA6F17131 /* Pods-SoFi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +680,7 @@
 		};
 		C9FE03482070625100749AB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E116537D743DFFE4446531 /* Pods-SoFi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +699,7 @@
 		};
 		C9FE034A2070625100749AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E29DD58A9D2554A1CA11F16 /* Pods-SoFiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +721,7 @@
 		};
 		C9FE034B2070625100749AB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28DD30EAF8DDACDE3B104FF5 /* Pods-SoFiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +743,7 @@
 		};
 		C9FE034D2070625100749AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD5139EBE5CF4FE85A614E9 /* Pods-SoFiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +764,7 @@
 		};
 		C9FE034E2070625100749AB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CAAC50E7A33C1E5A3A69239 /* Pods-SoFiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
